@@ -1,7 +1,10 @@
 <?php
 class StudentModel extends Database {
   public function getStudent() {
-    return $this->getCollection("startup_log");
+    foreach($this->getCollection("user") as $a) {
+      echo $a["name"];
+    }
+    return $this->getCollection("user");
   }
 
   public function setStudent($student) {
