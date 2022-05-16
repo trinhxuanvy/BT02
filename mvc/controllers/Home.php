@@ -1,14 +1,15 @@
 <?php
 class Home extends Controller {
   function index() {
-    $student = $this->model("StudentModel");
-    $this->view("index");
+    $clubModel = $this->model("ClubModel");
+    $playerModel = $this->model("PlayerModel");
+    $clubs = $clubModel->getClub();
+    $players = $playerModel->getPlayer();
+    $this->view("index", ["clubs"=>$clubs, "players"=>$players]);
   }
 
   function show() {
-    $coachModel = $this->model("CoachModel");
-    $coachs = $coachModel->getCoach();
-    $this->view("index", ["data"=>$coachs]);
+
   }
 }
 ?>

@@ -1,15 +1,15 @@
 <?php 
 class Database {
-  public $connection;
-  public $serverName = "localhost:8080";
-  public $username = "root";
-  public $password = "root";
-  public $dbName = "football";
+  public $con;
+    protected $servername = "localhost";
+    protected $username = "root";
+    protected $password = "";
+    protected $dbname = "football";
 
-  function _construct() {
-    $this->connection = new mysqli($serverName, $username, $password);
-    mysqli_select_db($this->connection, $this->dbName);
-    mysqli_query($this->connection, "SET NAMES 'utf8'");
-  }
+    function __construct(){
+        $this->con = mysqli_connect($this->servername, $this->username, $this->password);
+        mysqli_select_db($this->con, $this->dbname);
+        mysqli_query($this->con, "SET NAMES 'utf8'");
+    }
 }
 ?>
