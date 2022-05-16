@@ -1,0 +1,235 @@
+.d-f {
+  display: flex;
+}
+
+.d-i-f {
+  display: inline-flex;
+}
+
+.d-b {
+  display: block;
+}
+
+.d-f-aic {
+  align-items: center;
+}
+
+.d-f-ajcc {
+  justify-content: center;
+}
+
+.link.active {
+  background-color: #00b14f;
+  color: #ffffff;
+}
+
+.t-upper {
+  text-transform: uppercase;
+}
+
+.t-lower {
+  text-transform: lowercase;
+}
+
+.f-w-600 {
+  font-weight: 600;
+}
+
+.pd-4 {
+  padding: 4px;
+}
+
+.pd-8 {
+  padding: 8px;
+}
+
+.pd-16 {
+  padding: 16px;
+}
+
+.pdy-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.pdx-8 {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.pdy-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.pdx-16 {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.mtt-4 {
+  margin-top: 4px;
+}
+
+.mtl-4 {
+  margin-right: 4px;
+}
+
+.mtb-4 {
+  margin-bottom: 4px;
+}
+
+.mtr-4 {
+  margin-right: 4px;
+}
+
+.mtt-8 {
+  margin-top: 8px;
+}
+
+.mtl-8 {
+  margin-right: 8px;
+}
+
+.mtb-8 {
+  margin-bottom: 8px;
+}
+
+.mtr-8 {
+  margin-right: 8px;
+}
+
+.mtt-16 {
+  margin-top: 16px;
+}
+
+.mtl-16 {
+  margin-right: 16px;
+}
+
+.mtb-16 {
+  margin-bottom: 16px;
+}
+
+.mtr-16 {
+  margin-right: 16px;
+}
+
+.bdb {
+  border-bottom: 1px solid #dddddd;
+}
+
+.t-no-wrap {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fsl {
+  font-size: large;
+}
+
+.bsd {
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.bgg {
+  background-color: #fafafa;
+}
+
+.bdr10x {
+  border-radius: 10px;
+}
+
+.ofh {
+  overflow: hidden;
+}
+
+.pos-a {
+  position: absolute;
+}
+
+.pos-r {
+  position: relative;
+}
+
+.top-50p {
+  top: 50%;
+}
+
+.left-50p {
+  left: 50%;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.tftl-i50-i50 {
+  transform: translate(-50%, -50%);
+}
+
+.tftlx-i50 {
+  transform: translateX(-50%);
+}
+
+.tftly-i50 {
+  transform: translateY(-50%);
+}
+
+.tag {
+  font-size: 12px;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 2px 4px;
+  background-color: #fa7f50;
+  color: #ffffff;
+}
+
+.z-index-100 {
+  z-index: 100;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.cover::after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  position: absolute;
+  display: none;
+  z-index: 10;
+  border-radius: 10px;
+  background-color: rgba(63, 63, 63, 0.747);
+}
+
+.at {
+  display: none !important;
+}
+
+.hover:hover .cover::after {
+  display: block;
+}
+
+.hover:hover .at {
+  display: block !important;
+}
+
+.csp {
+  cursor: pointer;
+}

@@ -6,6 +6,7 @@ class App {
 
   function __construct() {
     $url = $this->handleURL();
+    print_r($url);
     
     if (file_exists("./mvc/controllers/".$url[3].".php")) {
       $this->controller = $url[3];
